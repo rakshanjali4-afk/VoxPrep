@@ -546,9 +546,11 @@ async function startServer() {
     });
   }
 
-  app.listen(Number(port), 'localhost', () => {
-    console.log(`VoxPrep server listening on http://localhost:${port}`);
-  });
+  const port = Number(process.env.PORT) || 3000;
+
+app.listen(port, '0.0.0.0', () => {
+  console.log(`VoxPrep server listening on port ${port}`);
+});
 }
 
 startServer();
