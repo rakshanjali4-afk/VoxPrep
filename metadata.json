@@ -1,0 +1,8 @@
+{
+  "name": "VoxPrep",
+  "description": "AI-powered voice interview coach that conducts interactive mock interviews with smart follow-ups and comprehensive personalized feedback.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

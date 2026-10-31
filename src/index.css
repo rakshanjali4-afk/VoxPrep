@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, kbd, samp, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom soundwave pulse animation */
+@keyframes wave-bar {
+  0%, 100% {
+    transform: scaleY(0.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-wave-bar {
+  animation: wave-bar 1.2s ease-in-out infinite;
+}
+
+/* Print formatting for Interview Report */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  
+  .print-page {
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+    max-width: 100% !important;
+  }
+}
